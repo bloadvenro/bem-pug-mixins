@@ -2,7 +2,7 @@
 
 __*Bemify your markup!*__
 
-Inspired by (bemto)[https://github.com/kizu/bemto] <3
+Inspired by [bemto](https://github.com/kizu/bemto) <3
 
 ## Install
 
