@@ -1,0 +1,193 @@
+[
+  {
+    "declare": {
+      "type": "block",
+      "attributes": {
+        "class": "Block1"
+      }
+    },
+    "expect": {
+      "name": "Block1",
+      "type": "block",
+      "tag": "div",
+      "attributes": {
+        "class": "Block1"
+      }
+    }
+  }, {
+    "declare": {
+      "type": "block",
+      "attributes": {
+        "class": "Block2_modifier"
+      }
+    },
+    "expect": {
+      "name": "Block2",
+      "type": "block",
+      "tag": "div",
+      "attributes": {
+        "class": "Block2 Block2{ms}modifier"
+      }
+    }
+  }, {
+    "declare": {
+      "type": "block",
+      "attributes": {
+        "class": "Block3_modifier_isModifier_hasModifier"
+      }
+    },
+    "expect": {
+      "name": "Block3",
+      "type": "block",
+      "tag": "div",
+      "attributes": {
+        "class": "Block3 Block3{ms}modifier Block3{ms}isModifier Block3{ms}hasModifier"
+      }
+    }
+  }, {
+    "declare": {
+      "type": "block",
+      "attributes": {
+        "class": "Block4 _1-item"
+      }
+    },
+    "expect": {
+      "name": "Block4",
+      "type": "block",
+      "tag": "div",
+      "attributes": {
+        "class": "Block4 Block3{es}item"
+      }
+    }
+  }, {
+    "declare": {
+      "type": "block",
+      "attributes": {
+        "class": "HEADER Block5"
+      }
+    },
+    "expect": {
+      "name": "Block5",
+      "type": "block",
+      "tag": "header",
+      "attributes": {
+        "class": "Block5"
+      }
+    }
+  }, {
+    "declare": {
+      "type": "block",
+      "attributes": {
+        "class": "Block6",
+        "href": "#"
+      }
+    },
+    "expect": {
+      "name": "Block6",
+      "type": "block",
+      "tag": "a",
+      "attributes": {
+        "class": "Block6",
+        "href": "#"
+      }
+    }
+  }, {
+    "declare": {
+      "type": "block",
+      "attributes": {
+        "class": "UL Block7_modifier_isModifier_hasModifier _1-item1_modifier _2-item2_modifier_isModifier"
+      }
+    },
+    "expect": {
+      "name": "Block7",
+      "type": "block",
+      "tag": "ul",
+      "attributes": {
+        "class": "Block7 Block7{ms}modifier Block7{ms}isModifier Block7{ms}hasModifier Block6{es}item1 Block6{es}item1{ms}modifier Block5{es}item2 Block5{es}item2{ms}modifier Block5{es}item2{ms}isModifier"
+      }
+    }
+  }, {
+    "declare": {
+      "type": "element",
+      "attributes": {
+        "class": "element1_modifier_isModifier_hasModifier _2-item2_modifier _3-item3_modifier_isModifier restClassA restClassB"
+      }
+    },
+    "expect": {
+      "name": "Block7{es}element1",
+      "type": "element",
+      "tag": "li",
+      "attributes": {
+        "class": "Block7{es}element1 Block7{es}element1{ms}modifier Block7{es}element1{ms}isModifier Block7{es}element1{ms}hasModifier Block6{es}item2 Block6{es}item2{ms}modifier Block5{es}item3 Block5{es}item3{ms}modifier Block5{es}item3{ms}isModifier restClassA restClassB"
+      }
+    }
+  }, {
+    "declare": {
+      "type": "block",
+      "attributes": {
+        "class": "DIV BlockWithID",
+        "bemID": true
+      }
+    },
+    "expect": {
+      "name": "BlockWithID",
+      "type": "block",
+      "tag": "div",
+      "attributes": {
+        "class": "BlockWithID",
+        "id": "BlockWithID"
+      }
+
+    }
+  }, {
+    "declare": {
+      "type": "element",
+      "attributes": {
+        "class": "DIV elementWithID",
+        "bemID": true
+      }
+    },
+    "expect": {
+      "name": "BlockWithID{es}elementWithID",
+      "type": "element",
+      "tag": "div",
+      "attributes": {
+        "class": "BlockWithID{es}elementWithID",
+        "id": "BlockWithID{es}elementWithID"
+      }
+
+    }
+  }, {
+    "declare": {
+      "type": "block",
+      "attributes": {
+        "class": "BlockWithStandaloneModifier _modifier"
+      }
+    },
+    "expect": {
+      "name": "BlockWithStandaloneModifier",
+      "type": "block",
+      "tag": "div",
+      "attributes": {
+        "class": "BlockWithStandaloneModifier BlockWithStandaloneModifier{ms}modifier"
+      }
+
+    }
+  }, {
+    "declare": {
+      "type": "element",
+      "attributes": {
+        "class": "elementWithStandaloneModifier _modifier"
+      }
+    },
+    "expect": {
+      "name": "BlockWithStandaloneModifier{es}elementWithStandaloneModifier",
+      "type": "element",
+      "tag": "div",
+      "attributes": {
+        "class": "BlockWithStandaloneModifier{es}elementWithStandaloneModifier BlockWithStandaloneModifier{es}elementWithStandaloneModifier{ms}modifier"
+      }
+
+    }
+  }
+]

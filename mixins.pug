@@ -1,0 +1,14 @@
+- const BEM = require('bem-pug-mixins').default
+- let bem = new BEM
+
+mixin b
+  - const b = bem.create('block', attributes)
+  #{b.getTag()}&attributes(b.getAttributes())
+    block
+  - bem.dropEntity()
+
+mixin e
+  - const e = bem.create('element', attributes)
+  #{e.getTag()}&attributes(e.getAttributes())
+    block
+  - bem.dropEntity()

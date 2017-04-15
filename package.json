@@ -1,0 +1,46 @@
+{
+  "name": "bem-pug-mixins",
+  "version": "1.0.0",
+  "description": "BEM tool for markup minification, using mixins.",
+  "main": "./lib/Factory.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha",
+    "build": "./node_modules/typescript/bin/tsc",
+    "lint": "./node_modules/tslint/bin/tslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bloadvenro/bem-pug-mixins.git"
+  },
+  "keywords": [
+    "bem",
+    "pug",
+    "pugjs"
+  ],
+  "author": "Viktor Petevotov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bloadvenro/bem-pug-mixins/issues"
+  },
+  "homepage": "https://github.com/bloadvenro/bem-pug-mixins#readme",
+  "devDependencies": {
+    "@types/chai": "^3.4.35",
+    "@types/deep-freeze": "0.0.29",
+    "@types/lodash": "^4.14.62",
+    "@types/mocha": "^2.2.40",
+    "@types/node": "^7.0.12",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "mocha-clean": "^1.0.0",
+    "ts-node": "^3.0.2",
+    "tslint": "^5.0.0",
+    "tslint-config-airbnb": "^1.1.1",
+    "typescript": "^2.2.2"
+  },
+  "types": "./lib/index.d.ts",
+  "dependencies": {
+    "deep-freeze": "0.0.1",
+    "lodash": "^4.17.4",
+    "nonenumerable": "^1.0.1"
+  }
+}

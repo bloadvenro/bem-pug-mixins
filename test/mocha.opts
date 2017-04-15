@@ -1,0 +1,4 @@
+--ui tdd
+--reporter spec
+--require mocha-clean
+--compilers ts:ts-node/register
