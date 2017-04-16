@@ -122,8 +122,8 @@ Place this code right after library inclusion.
 
     +b.Hero(bemID) // <div class="Hero" id="Hero">
 
-      // nth-levels-up element (experimetnal). Creates an element for the nth
-      // block above in call stack!
+      // nth-levels-up element. Creates an element of the nth block above in call stack!
+      // See real world example in complex scenarios.
 
       +e.inner._2-container // -> <div class="Hero-inner Page-container">
 
@@ -170,4 +170,34 @@ Will produce
 
 ```
 <input type="submit" class="Btn Btn--primary" value="Sign Up">
+```
+
+_Nth-levels-up element_
+
+Remember Btn mixin?
+
+Suppose we have a form like:
+
+```
+  +b.Form  
+
+    +e.header
+
+      +e.guide After submission you'll receive a SMS verification code.
+
+    +e.main
+
+      +e.fields
+
+        // Some fields with controls...
+
+      +e.actions
+
+        // We want special style adjustments for form action buttons. But `Btn` is a complex
+        // mixin, with encapsulated logic, and we want to append `.Form-action` class to the
+        // button component. We can easily get reference to `Form` block:
+
+        +Btn._1-action // -> class="Btn Form-action"
+
+    +e.footer Have no account? #[+Link('/signup') Sign up!] 
 ```
